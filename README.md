@@ -15,6 +15,7 @@ Problem set:  To add number of days to a given date (where a date exposes its da
 To recursively keep adding days, months and years.
 
 # 2.a
+# DateUtils.java
 1. One approach which results in all my test cases getting passed is to take a data structure to define number of days for each month. A single dimesion array is fine.
 2. Have a logic for determining whether a year is leap or not. I have gone with the understanding that a leap year is the one which is either divisble wholly by 400 or is divisible by 4 but not by 100.
 3. Go recursively or using a looping mechanism to keep adding days to current day of the date and checking if it has exceeded the number of days for the month, and then for the year.
@@ -22,12 +23,14 @@ To recursively keep adding days, months and years.
 5. Problem with this approach is that it is not the most efficient approach. If number of days is very big, the number of iterations might increase as we are going on iterations at month level
 
 # 2.b
+# DateUtilsPerf.java
 1. I decided to then chop off the number of years  beforehand and then taking 2.a path
 2. In this I would have to take care of the number of leap days as I have taken a standard 365 day year.
 3. I was able to achieve most of the test cases, but one boundary case do remain where in addition of 365 or more days don't tip over 29-Feb of the following leap year.
 4. I will work on this specific probem now. Probably, deciding on a block which remains constant.
 
-In the meantime, I have committed the files at following github repo.
+In the meantime, I have committed the files at following github repo
+
 
 
 
